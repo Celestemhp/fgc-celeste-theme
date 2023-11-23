@@ -1,16 +1,24 @@
 {
   "name": "fgc_celeste_theme",
   "version": "1.0.0",
-  "description": "Beskrivelse af dit tema",
+  "description": "Theme for Farum Gospel Choir by celeste",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass scss/ -o css/ --output-style compressed --source-map true",
+    "watch:scss": "onchange 'scss/**/*.scss' -- npm run compile:sass"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Celestemhp/fgc-celeste-theme"
+    "url": "git+https://github.com/Celestemhp/fgc-celeste-theme.git"
   },
-  "author": "Celeste",
+  "author": "celeste",
   "license": "ISC",
-  "dependencies": {}
+  "bugs": {
+    "url": "https://github.com/Celestemhp/fgc-celeste-theme/issues"
+  },
+  "homepage": "https://github.com/Celestemhp/fgc-celeste-theme#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
 }
