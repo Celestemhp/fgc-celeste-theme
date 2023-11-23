@@ -1,10 +1,14 @@
 {
-  "name": "fgc-celeste-theme",
+  "name": "fgc_celeste_theme",
   "version": "1.0.0",
   "description": "Beskrivelse af dit tema",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Celestemhp/fgc-celeste-theme"
   },
   "author": "Celeste",
   "license": "ISC",
